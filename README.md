@@ -128,3 +128,40 @@ Bài toán quản lý sản phẩm trong nhà thuốc nhằm đảm bảo quản
   - Trường SDT: nvarchar(10)
   - Trường Email: nvarchar(50)
   - Trường NguoiDaiDien: nvarchar(50)
+## Các Chức Năng
+  - Thêm Đơn Hàng
+
+    ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/88acea29-dfef-4e43-ae32-346bb1118f8f)
+
+    - Chạy lệnh: "EXEC ThemDonHangVaChiTiet 
+    @SoHoaDon = a103, 
+    @MaKhachHang = 103, 
+    @MaNhanVien = NV1, 
+    @NgayBan = '2024-06-18', 
+    @MaHinhThucThanhToan = 1, 
+    @MaSanPham = SP2, 
+    @SoLuongBan = 10, 
+    @GiamGia = 0;" để thêm thông tin vào bảng DonHang và ChiTietDonHang
+    - Kết Quả:
+      
+      ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/f460d44a-fb0d-4ca0-9472-dc147725fb4d)
+      ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/d0e492f1-b688-4cd4-85a8-058bea3b9868)
+- Xóa Đơn Hàng
+    - Tạo Trigger để khi xóa 1 trường tại bảng DonHang thì sẽ xóa 1 trường cùng MaDonHang ở bảng ChiTietDonHang
+
+      ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/50da4b9b-ebe5-4554-8924-8d9e70bb7c3d)
+    - Kết quả:
+      - Chạy lệnh: "delete from DONHANG where SOHOADON='a102'"
+
+        ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/0aea5f54-183d-4780-a965-f8ed784044f8)
+        ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/a35a4927-4e38-416e-9822-3899c17abded)
+- Sửa Đơn Hàng
+  - Thông tin cũ:
+  
+    ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/c1468bad-4d7e-4c2e-baf7-bd8495a16627)
+  - Thông tin mới:
+
+    ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/a9c667c8-9e4a-43fd-8051-c8a0a589322c)
+- 
+    
+
