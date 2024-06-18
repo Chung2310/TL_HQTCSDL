@@ -162,6 +162,22 @@ Bài toán quản lý sản phẩm trong nhà thuốc nhằm đảm bảo quản
   - Thông tin mới:
 
     ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/a9c667c8-9e4a-43fd-8051-c8a0a589322c)
-- 
-    
+- Thêm Sản Phẩm
+  
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/b3d98cf5-12ef-4077-8f7b-5e7eaa78f667)
+- Sửa Sản Phẩm
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/55e5bc1d-3c62-4fde-9e3f-f02218ede0f5)
+- Xóa Sản Phẩm
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/34f49cca-3de8-4a61-bcd3-ab83f5f10476)
+- THêm Thông Tin Khách Hàng
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/f63bb21a-2aa0-4ce8-934e-5ceb23130253)
+
+- Sửa Thông Tin Khách Hàng
+  
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/605b8355-33cb-4f51-aca8-465d533dc48c)
+- Xóa Thông Tin Khách Hàng
+  
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/55ca79e4-5522-4c1e-b3e4-06b7a6646a9b)
 
