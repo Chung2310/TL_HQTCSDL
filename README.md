@@ -38,7 +38,7 @@ Bài toán quản lý sản phẩm trong nhà thuốc nhằm đảm bảo quản
   
   ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/e2b849b2-6e7f-4fb9-bcd0-21df091d59fe)
 
-  - Trường MaNhanVien là Primary Key vì MaNhanVien bảm đảm tính duy nhất và toàn vẹn của dữ liệu trong bảng => MaNhanVien không được phép Null. Kiểu dữ liệu là nvarchar(50)
+  - Trường MaQuanLy là Primary Key vì MaQuanLy bảm đảm tính duy nhất và toàn vẹn của dữ liệu trong bảng => MaQuanLy không được phép Null. Kiểu dữ liệu là nvarchar(50)
   - Trường TenQuanLy: nvarchar(50)
   - Trường NgaySinh: datetime
   - Trường SDT: nvarchar(50)
@@ -172,12 +172,46 @@ Bài toán quản lý sản phẩm trong nhà thuốc nhằm đảm bảo quản
 
   ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/34f49cca-3de8-4a61-bcd3-ab83f5f10476)
 - THêm Thông Tin Khách Hàng
+  
   ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/f63bb21a-2aa0-4ce8-934e-5ceb23130253)
 
 - Sửa Thông Tin Khách Hàng
+  
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/dbe54eee-5271-45e9-b786-c9ddf3a22c61)
+- Xóa Thông Tin Khách Hàng
+
   
   ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/605b8355-33cb-4f51-aca8-465d533dc48c)
 - Xóa Thông Tin Khách Hàng
   
   ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/55ca79e4-5522-4c1e-b3e4-06b7a6646a9b)
+- Thêm Thôn tin nhà cung cấp
 
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/e95e2daf-5660-4fc8-b2f4-def2584e8387)
+- Sửa thông tin nhà cung cấp
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/13f92ccb-663d-4883-b332-93a96f87bedc)
+- Xóa thông tin nhà cung cáp
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/8e3f6f3e-5279-4d41-b91c-eed62c0c4312)
+- Thêm thông tin nhân viên
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/8fe7e1ef-5a38-4d57-ba85-1f4bbbdffd4b)
+- Sửa thông tin nhân viên
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/636b244e-106f-43f2-b0f3-ea4974840ccc)
+- Xóa thông tin nhân viên
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/b0ad5ea1-a37d-4938-ad46-9d61b912a241)
+- Thêm Phiếu thông kê
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/8387ecc2-17bf-43c4-803d-604f58bce8f5)
+- Sửa Phiếu Thống Kê
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/4a9cb0b8-c8f4-4f1d-a709-bd1d38a5dd72)
+- Xóa Phiếu Thống Kê
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/bd768f63-a7d3-41c3-b868-5747a3d58376)
+
+## Các Báo Cáo
+-
