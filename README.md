@@ -22,9 +22,26 @@ Bài toán quản lý sản phẩm trong nhà thuốc nhằm đảm bảo quản
 - Bảng QuanLy(MaQuanLy, TenQuanLy, NgaySinh, SDT, DiaChi, TaiKhoan, MatKhau);
 - Bảng PhieuThongKe(SoPhieuThongKe, MaNhanVien, NgayThongKe);
 - Bảng ChiTietPhieuThongKe(SoPhieuThongKe, MaSanPham, SoLuongDaBan, TongTien);
+  - Hình ảnh bảng
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/d16982f3-092f-46b9-a786-9cba4c411d93)
+  - Mô tả bảng:
+      - Trường SoPhieuThongKe là Primary Key vì SoHoaDon bảm đảm tính duy nhất và toàn vẹn của dữ liệu trong bảng => SoPhieuThongKe không được phép Null. Kiểu dữ liệu là nvarchar(50)
+      - Trường MaSanPham là Foreign Key vì MaSanPham đảm bảo mỗi quan hệ giữa các bảng được duy trì chính xác. Kiểu dữ liệu là nvarchar(50)
+      - Trường SoLuongDaBan có kiểu INT. Có CK không cho phép nhập giá trị nhỏ hơn hoặc bằng 0.
+      - Trường TongTien có kiểu BIGINT. Có CK không cho phép nhập giá trị nhỏ hơn hoặc bằng 0.  Giá trị của trường sẽ được tính toán thông qua 1 PROCEDURE có tên là CalculatorTongTienTheoNgay. TongTien = ChiTietDonHang.SoLuong * SanPham.GiaBan.
 - Bảng ThanhToan(MaHinhThucThanhToan, TenHinhThucThanhToan);
 - Bảng DonHang(SoHoaDon, MaKhachHang, MaNhanVien, NgayBan, MaHinhThucThanhToan);
 - Bảng ChiTietDonHang(SoHoaDon, MaSanPham, SoLuong, GiamGia, TongTien);
+  - Hình ảnh bảng
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/3bbc28a8-50f1-42dc-b857-e1de01ec1c7c)
+  - Mô tả bảng:
+      - Trường SoHoaDon là Primary Key vì SoHoaDon bảm đảm tính duy nhất và toàn vẹn của dữ liệu trong bảng => SoHoaDon không được phép Null. Kiểu dữ liệu là nvarchar(50)
+      - Trường MaSanPham là Foreign Key vì MaSanPham đảm bảo mỗi quan hệ giữa các bảng được duy trì chính xác. Kiểu dữ liệu là nvarchar(50)
+      - Trường SoLuongBan có kiểu INT. Có CK không cho phép nhập giá trị nhỏ hơn hoặc bằng 0.
+      - Trường GiamGia có kiểu BIGINT. Có CK không cho phép nhập giá trị nhỏ hơn hoặc bằng 0.
+      - Trường TongTien có kiểu BIGINT. Có CK không cho phép nhập giá trị nhỏ hơn hoặc bằng 0. Giá trị của trường sẽ được tính toán thông qua 1 PROCEDURE có tên là CalculatorTongTien. TongTien = ChiTietDonHang.SoLuong * SanPham.GiaBan.
+      ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/b9374c9b-ebfd-4206-8c96-4e576a459c39)
+      ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/c2c1e79d-fd68-4bee-8a4d-8cc5eeea2573)
 - Bảng KhachHang(MaKhachHang, TenKhachHang, GioiTinh, DiaChi, SDT);
 - Bảng SanPham(MaSanPham, TenSanPham, MaNhaCC, SoLuong, GiaBan, NgaySanXuat, HanSuDung);
 - Bảng NhaCungCap(MaNhaCC, TenNhaCC, DiaChi, SDT, Email, NguoiDaiDien);
