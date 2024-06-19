@@ -16,7 +16,7 @@ Bài toán quản lý sản phẩm trong nhà thuốc nhằm đảm bảo quản
 ## Báo cáo
 - Báo cáo sản phẩm sắp hết hạn
 - Báo cáo các sản phẩm tồn kho
-- Báo cáo tổng tiền của một hóa đơn 
+- Tính Tổng Doanh Thu
 ## Các bảng của hệ thống
 - Bảng NhanVien(MaNhanVien, TenNhanVien, GioiTinh, NgaySinh, DiaChi, SDT, LuongCoBan, PhuCap, TaiKhoan, MatKhau, MaQuanLy);
 
@@ -90,9 +90,7 @@ Bài toán quản lý sản phẩm trong nhà thuốc nhằm đảm bảo quản
   - Trường MaSanPham là Foreign Key vì MaSanPham đảm bảo mỗi quan hệ giữa các bảng được duy trì chính xác. Kiểu dữ liệu là nvarchar(50)
   - Trường SoLuongBan: int. Có CK không cho phép nhập giá trị nhỏ hơn hoặc bằng 0.
   - Trường GiamGia: BIGINT. Có CK không cho phép nhập giá trị nhỏ hơn hoặc bằng 0.
-  - Trường TongTien: BIGINT. Có CK không cho phép nhập giá trị nhỏ hơn hoặc bằng 0. Giá trị của trường sẽ được tính toán thông qua 1 PROCEDURE có tên là CalculatorTongTien. TongTien = ChiTietDonHang.SoLuong * SanPham.GiaBan.
-    
-  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/270b9f08-394c-4685-ac56-177571c4cbbd)
+  - Trường TongTien: BIGINT. Có CK không cho phép nhập giá trị nhỏ hơn hoặc bằng 0. 
   
 - Bảng KhachHang(MaKhachHang, TenKhachHang, GioiTinh, DiaChi, SDT);
 
@@ -131,17 +129,7 @@ Bài toán quản lý sản phẩm trong nhà thuốc nhằm đảm bảo quản
 ## Các Chức Năng
   - Thêm Đơn Hàng
 
-    ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/88acea29-dfef-4e43-ae32-346bb1118f8f)
-
-    - Chạy lệnh: "EXEC ThemDonHangVaChiTiet 
-    @SoHoaDon = a103, 
-    @MaKhachHang = 103, 
-    @MaNhanVien = NV1, 
-    @NgayBan = '2024-06-18', 
-    @MaHinhThucThanhToan = 1, 
-    @MaSanPham = SP2, 
-    @SoLuongBan = 10, 
-    @GiamGia = 0;" để thêm thông tin vào bảng DonHang và ChiTietDonHang
+    ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/e4018c3b-4d76-4d3c-94b9-7de99f0617a0)
     - Kết Quả:
       
       ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/f460d44a-fb0d-4ca0-9472-dc147725fb4d)
@@ -214,4 +202,22 @@ Bài toán quản lý sản phẩm trong nhà thuốc nhằm đảm bảo quản
   ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/bd768f63-a7d3-41c3-b868-5747a3d58376)
 
 ## Các Báo Cáo
--
+- Báo cáo sản phẩm sắp hết hạn
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/a0495a95-7227-46a0-a301-7a81e021d426)
+  - Kết quả:
+
+    ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/f2a1e1ff-02ee-4a07-86d8-ebf25feec56f)
+- Báo cáo sản phẩm tồn kho
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/556977e8-66ae-4c37-a0b8-d32a4a9b100a)
+  - Kết quả:
+
+    ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/2aad092c-80df-4264-b7d7-1df876c30f08)
+
+- Tính Tổng doanh thu
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/7dd06ed5-37fa-4d20-a617-d2b831e2f439)
+  - Kết quả:
+
+  ![image](https://github.com/Chung2310/TL_HQTCSDL/assets/131289318/e155fc24-b4bd-4407-a0b5-7c8fe31f4a23)
